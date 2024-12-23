@@ -1,2 +1,98 @@
-{ "commands": []
+{
+  "commands": [
+    {
+      "hdr": "750",
+      "eax": "A2",
+      "fcm1": true,
+      "cmd": {
+        "21": "30"
+      },
+      "freq": 5,
+      "signals": [
+        {
+          "id": "UX_TP_FL",
+          "path": "Tires",
+          "fmt": {
+            "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+          },
+          "name": "Front left tire pressure",
+          "suggestedMetric": "frontLeftTirePressure"
+        },
+        {
+          "id": "UX_TP_FR",
+          "path": "Tires",
+          "fmt": {
+            "bix": 8, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+          },
+          "name": "Front right tire pressure",
+          "suggestedMetric": "frontRightTirePressure"
+        },
+        {
+          "id": "UX_TP_RL",
+          "path": "Tires",
+          "fmt": {
+            "bix": 16, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+          },
+          "name": "Rear left tire pressure",
+          "suggestedMetric": "rearLeftTirePressure"
+        },
+        {
+          "id": "UX_TP_RR",
+          "path": "Tires",
+          "fmt": {
+            "bix": 24, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+          },
+          "name": "Rear right tire pressure",
+          "suggestedMetric": "rearRightTirePressure"
+        }
+      ]
+    },
+    {
+      "hdr": "750",
+      "eax": "A2",
+      "fcm1": true,
+      "cmd": {
+        "21": "15"
+      },
+      "freq": 5,
+      "signals": [
+        {
+          "id": "UX_TP_FL",
+          "path": "Tires",
+          "fmt": {
+            "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+          },
+          "name": "Front left tire pressure",
+          "suggestedMetric": "frontLeftTirePressure"
+        },
+        {
+          "id": "UX_TP_FR",
+          "path": "Tires",
+          "fmt": {
+            "bix": 8, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+          },
+          "name": "Front right tire pressure",
+          "suggestedMetric": "frontRightTirePressure"
+        },
+        {
+          "id": "UX_TP_RL",
+          "path": "Tires",
+          "fmt": {
+            "bix": 16, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+          },
+          "name": "Rear left tire pressure",
+          "suggestedMetric": "rearLeftTirePressure"
+        },
+        {
+          "id": "UX_TP_RR",
+          "path": "Tires",
+          "fmt": {
+            "bix": 24, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+          },
+          "name": "Rear right tire pressure",
+          "suggestedMetric": "rearRightTirePressure"
+        }
+      ]
+    }
+  ]
 }
