@@ -1,6 +1,91 @@
 {
   "commands": [
     {
+      "hdr": "7B0",
+      "rax": "7B8",
+      "cmd": {
+        "21": "47"
+      },
+      "freq": 0.25,
+      "signals": [
+        {
+          "id": "UX_STEER_ANGLE",
+          "path": "Control",
+          "fmt": {
+            "bix": 24,
+            "len": 16,
+            "max": 1000,
+            "min": -1000,
+            "div": 10,
+            "add": -32768,
+            "unit": "degrees"
+          },
+          "name": "Steering wheel angle"
+        }
+      ]
+    },
+    {
+      "hdr": "7B0",
+      "rax": "7B8",
+      "cmd": {
+        "21": "03"
+      },
+      "freq": 0.25,
+      "signals": [
+        {
+          "id": "UX_TIRE_FR_SPD",
+          "path": "Movement",
+          "fmt": {
+            "len": 8,
+            "max": 326.4,
+            "mul": 256,
+            "div": 200,
+            "unit": "kilometersPerHour"
+          },
+          "name": "Front right wheel speed"
+        },
+        {
+          "id": "UX_TIRE_FL_SPD",
+          "path": "Movement",
+          "fmt": {
+            "bix": 8,
+            "len": 8,
+            "max": 326.4,
+            "mul": 256,
+            "div": 200,
+            "unit": "kilometersPerHour"
+          },
+          "name": "Front left wheel speed"
+        },
+        {
+          "id": "UX_TIRE_RR_SPD",
+          "path": "Movement",
+          "fmt": {
+            "bix": 16,
+            "len": 8,
+            "max": 326.4,
+            "mul": 256,
+            "div": 200,
+            "unit": "kilometersPerHour"
+          },
+          "name": "Rear right wheel speed"
+        },
+        {
+          "id": "UX_TIRE_RL_SPD",
+          "path": "Movement",
+          "fmt": {
+            "bix": 24,
+            "len": 8,
+            "max": 326.4,
+            "mul": 256,
+            "div": 200,
+            "unit": "kilometersPerHour"
+          },
+          "name": "Rear left wheel speed"
+        }
+      ]
+    },
+    {
       "hdr": "750",
       "eax": "A2",
       "fcm1": true,
@@ -13,7 +98,11 @@
           "id": "UX_TP_FL",
           "path": "Tires",
           "fmt": {
-            "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+            "len": 8,
+            "max": 4,
+            "div": 58,
+            "add": -0.5,
+            "unit": "psi"
           },
           "name": "Front left tire pressure",
           "suggestedMetric": "frontLeftTirePressure"
@@ -22,7 +111,12 @@
           "id": "UX_TP_FR",
           "path": "Tires",
           "fmt": {
-            "bix": 8, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+            "bix": 8,
+            "len": 8,
+            "max": 4,
+            "div": 58,
+            "add": -0.5,
+            "unit": "psi"
           },
           "name": "Front right tire pressure",
           "suggestedMetric": "frontRightTirePressure"
@@ -31,7 +125,12 @@
           "id": "UX_TP_RL",
           "path": "Tires",
           "fmt": {
-            "bix": 16, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+            "bix": 16,
+            "len": 8,
+            "max": 4,
+            "div": 58,
+            "add": -0.5,
+            "unit": "psi"
           },
           "name": "Rear left tire pressure",
           "suggestedMetric": "rearLeftTirePressure"
@@ -40,7 +139,12 @@
           "id": "UX_TP_RR",
           "path": "Tires",
           "fmt": {
-            "bix": 24, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+            "bix": 24,
+            "len": 8,
+            "max": 4,
+            "div": 58,
+            "add": -0.5,
+            "unit": "psi"
           },
           "name": "Rear right tire pressure",
           "suggestedMetric": "rearRightTirePressure"
@@ -60,7 +164,11 @@
           "id": "UX_TP_FL",
           "path": "Tires",
           "fmt": {
-            "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+            "len": 8,
+            "max": 4,
+            "div": 58,
+            "add": -0.5,
+            "unit": "psi"
           },
           "name": "Front left tire pressure",
           "suggestedMetric": "frontLeftTirePressure"
@@ -69,7 +177,12 @@
           "id": "UX_TP_FR",
           "path": "Tires",
           "fmt": {
-            "bix": 8, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+            "bix": 8,
+            "len": 8,
+            "max": 4,
+            "div": 58,
+            "add": -0.5,
+            "unit": "psi"
           },
           "name": "Front right tire pressure",
           "suggestedMetric": "frontRightTirePressure"
@@ -78,7 +191,12 @@
           "id": "UX_TP_RL",
           "path": "Tires",
           "fmt": {
-            "bix": 16, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+            "bix": 16,
+            "len": 8,
+            "max": 4,
+            "div": 58,
+            "add": -0.5,
+            "unit": "psi"
           },
           "name": "Rear left tire pressure",
           "suggestedMetric": "rearLeftTirePressure"
@@ -87,7 +205,12 @@
           "id": "UX_TP_RR",
           "path": "Tires",
           "fmt": {
-            "bix": 24, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "psi"
+            "bix": 24,
+            "len": 8,
+            "max": 4,
+            "div": 58,
+            "add": -0.5,
+            "unit": "psi"
           },
           "name": "Rear right tire pressure",
           "suggestedMetric": "rearRightTirePressure"
