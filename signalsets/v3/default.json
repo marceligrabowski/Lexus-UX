@@ -1,6 +1,23 @@
 {
   "commands": [
     {
+      "hdr": "7C0",
+      "rax": "7C8",
+      "cmd": {
+        "22": "1022"
+      },
+      "freq": 15,
+      "signals": [
+        {
+          "id": "UX_FUEL_LEVEL",
+          "path": "Fuel",
+          "fmt": {
+            "len": 
+          }
+        }
+      ]
+    },
+    {
       "hdr": "7B0",
       "rax": "7B8",
       "cmd": {
@@ -87,7 +104,7 @@
     },
     {
       "hdr": "750",
-      "eax": "A2",
+      "eax": "2A",
       "fcm1": true,
       "cmd": {
         "21": "30"
@@ -153,7 +170,7 @@
     },
     {
       "hdr": "750",
-      "eax": "A2",
+      "eax": "2A",
       "fcm1": true,
       "cmd": {
         "21": "15"
