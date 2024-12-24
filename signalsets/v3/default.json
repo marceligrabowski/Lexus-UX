@@ -4,6 +4,28 @@
       "hdr": "7B0",
       "rax": "7B8",
       "cmd": {
+        "21": "47"
+      },
+      "freq": 0.25,
+      "signals": [
+        {
+          "id": "UX_STEER_ANGLE",
+          "path": "Control",
+          "fmt": {
+            "bix": 24,
+            "len": 16,
+            "div": 10,
+            "add": -3276,
+            "unit": "degrees"
+          },
+          "name": "Steering wheel angle"
+        }
+      ]
+    },
+    {
+      "hdr": "7B0",
+      "rax": "7B8",
+      "cmd": {
         "21": "03"
       },
       "freq": 0.25,
@@ -64,7 +86,6 @@
     {
       "hdr": "750",
       "eax": "2A",
-      "fcm1": false,
       "cmd": {
         "21": "30"
       },
@@ -130,7 +151,7 @@
     {
       "hdr": "750",
       "eax": "2A",
-      "fcm1": false,
+      "fcm1": true,
       "cmd": {
         "21": "15"
       },
