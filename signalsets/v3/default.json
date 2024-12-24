@@ -14,10 +14,8 @@
           "fmt": {
             "bix": 24,
             "len": 16,
-            "max": 1000,
-            "min": -1000,
             "div": 10,
-            "add": -32768,
+            "add": -3276,
             "unit": "degrees"
           },
           "name": "Steering wheel angle"
@@ -88,7 +86,6 @@
     {
       "hdr": "750",
       "eax": "2A",
-      "fcm1": true,
       "cmd": {
         "21": "30"
       },
