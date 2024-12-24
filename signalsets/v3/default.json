@@ -1,6 +1,29 @@
 {
   "commands": [
     {
+      "hdr": "7C0",
+      "rax": "7C8",
+      "cmd": {
+        "22": "1022"
+      },
+      "freq": 15,
+      "signals": [
+        {
+          "id": "UX_FUEL_LEVEL",
+          "path": "Fuel",
+          "fmt": {
+            "bix": 0,
+            "len": 16,
+            "max": 100,
+            "div": 100,
+            "add": 0,
+            "unit": "degrees"
+          },
+          "name": "Fuel Level"
+        }
+      ]
+    },
+    {
       "hdr": "7B0",
       "rax": "7B8",
       "cmd": {
