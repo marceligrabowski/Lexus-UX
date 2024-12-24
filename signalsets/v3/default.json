@@ -25,30 +25,6 @@
       ]
     },
     {
-      "hdr": "7C0",
-      "rax": "7C8",
-      "cmd": {
-        "21": "29"
-      },
-      "freq": 15,
-      "signals": [
-        {
-          "id": "UX_FUEL_INPUT",
-          "path": "Fuel",
-          "fmt": {
-            "bix": 0,
-            "len": 8,
-            "max": 100,
-            "div": 2,
-            "add": 0,
-            "unit": "percent"
-          },
-          "name": "Fuel Input",
-          "suggestedMetric": "fuelTankLevel"
-        }
-      ]
-    },
-    {
       "hdr": "7B0",
       "rax": "7B8",
       "cmd": {
