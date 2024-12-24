@@ -1,47 +1,6 @@
 {
   "commands": [
     {
-      "hdr": "7C0",
-      "rax": "7C8",
-      "cmd": {
-        "21": "29"
-      },
-      "freq": 15,
-      "signals": [
-        {
-          "id": "UX_FUEL_PERCENT",
-          "path": "Fuel",
-          "name": "Fuel percent",
-          "fmt": {
-            "len": 8,
-            "div": 2
-          }
-        }
-      ]
-    },
-    {
-      "hdr": "7B0",
-      "rax": "7B8",
-      "cmd": {
-        "21": "47"
-      },
-      "freq": 0.25,
-      "signals": [
-        {
-          "id": "UX_STEER_ANGLE",
-          "path": "Control",
-          "fmt": {
-            "bix": 24,
-            "len": 16,
-            "div": 10,
-            "add": -3276,
-            "unit": "degrees"
-          },
-          "name": "Steering wheel angle"
-        }
-      ]
-    },
-    {
       "hdr": "7B0",
       "rax": "7B8",
       "cmd": {
